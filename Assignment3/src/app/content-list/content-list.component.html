@@ -1,0 +1,12 @@
+<p>
+  <input [(ngModel)]="twoWayBinding"> {{ twoWayBinding | uppercase}} <br>
+  <button (click)="findBook(twoWayBinding.value)">Find that book!</button>
+</p>
+<section class="novel">
+  <h2>Novels</h2>
+<app-content-card *ngFor="let item of (content | defaultType: 'Novel'); last as isLast; " [content]="item" [class.is-last]="isLast"></app-content-card>
+</section>
+<section class="other">
+  <h2>Fairytales</h2>
+  <app-content-card *ngFor="let item of (content | defaultType: 'Fairytale'); last as isLast; " [content]="item" [class.is-last]="isLast"></app-content-card>
+</section>

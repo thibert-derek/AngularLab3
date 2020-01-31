@@ -1,0 +1,16 @@
+:host {
+  display: block;
+  padding: 10px;
+  margin: auto;
+  text-align: center;
+  width: auto;
+}
+
+img {
+  width: 100px;
+}
+
+:host.other{
+  border: 2px solid blue;
+}
+

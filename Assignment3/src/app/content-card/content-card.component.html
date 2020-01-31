@@ -1,0 +1,13 @@
+<span class="whole">
+    <img (click)="clickMe()" src= "{{content.imageUrl}}">
+<div class="listitem">
+<div *ngIf="content.body"><strong>Body:</strong> {{content.body}} </div>
+<div *ngIf="content.author"><strong>Author:</strong> {{content.author}}</div>
+<div *ngIf="content.title"><strong>Title:</strong> {{content.title}}</div>
+  <div class="type">
+    <strong>Type:</strong> {{ content.type }}
+  </div>
+
+</div>
+</span>
+<br>
